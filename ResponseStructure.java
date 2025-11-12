@@ -1,0 +1,34 @@
+package com.example.demo.dtoPackage;
+
+import org.springframework.http.HttpStatus;
+
+public class ResponseStructure<T> {
+	private int statusCode;
+	private String message;
+	private T data;
+
+	public int getStatusCode() {
+		return statusCode;
+	}
+
+	public void setStatusCode(int ok) {
+		this.statusCode = ok;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public T getData() {
+		return data;
+	}
+
+	public void setData(T data) {
+		this.data = data;
+	}
+
+}
